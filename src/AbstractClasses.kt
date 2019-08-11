@@ -1,5 +1,9 @@
 fun main(args: Array<String>) {
+    var myLion = LionClass()
+    println(myLion.getName()+" - "+myLion.getLionSpeed())
 
+    var mytiger = TigerClass()
+    println(mytiger.getName()+" - "+mytiger.getSpeed())
 }
 
 abstract class AnimalClass{
@@ -27,5 +31,9 @@ class TigerClass : AnimalClass(){
 
     fun getTigerSpeed(): Int{
         return getSpeed()
+    }
+
+    override fun getSpeed(): Int {
+        return 5000;
     }
 }
